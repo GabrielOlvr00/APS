@@ -1,13 +1,29 @@
-body {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-  list-style: none;
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5e5fc;
+  font-size: 1.2rem;
+}
+
+.title {
+  background-image: url('https://i.pinimg.com/736x/31/7a/e3/317ae362800cc825849094db9e894512.jpg');
+  color: #f5e5fc;
+  font-size: 3rem;
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.274);
 }
 
 .nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+ul {
+  list-style: none;
 }
