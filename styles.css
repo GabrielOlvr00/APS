@@ -19,11 +19,15 @@ body {
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  background: #749c75;
+  padding: 2rem;
 }
 
 ul {
   list-style: none;
+}
+
+p {
+  margin-block: 1rem;
 }
