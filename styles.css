@@ -71,3 +71,16 @@ p {
 h2 {
   margin-top: 2rem;
 }
+
+.image-list li {
+  position: relative;
+}
+
+.phones {
+  background-image: url('./assets/broken-phones.webp');
+}
+
+.image-list img {
+  height: 10rem;
+  width: 10rem;
+}
