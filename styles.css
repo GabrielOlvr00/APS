@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -11,16 +15,35 @@ body {
 }
 
 .title {
-  background-image: url('https://i.pinimg.com/736x/31/7a/e3/317ae362800cc825849094db9e894512.jpg');
+  background-image: url('./assets/e-waste.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #f5e5fc;
-  font-size: 3rem;
-  padding: 3rem;
-  background-color: rgba(0, 0, 0, 0.274);
+  font-size: 2rem;
+  padding-block: 10rem;
+  position: relative;
+  z-index: -2;
+}
+
+.title h1 {
+  z-index: 100;
+}
+
+.title .grey-background {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.37);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
 }
 
 .nav {
+  display: flex;
   flex-direction: column;
-  background: #749c75;
+  gap: 1rem;
+  background: #595959;
   padding: 2rem;
 }
 
@@ -28,6 +51,23 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #f5e5fc;
+}
+a:hover {
+  color: white;
+}
+
+.content-wrapper {
+  text-align: left;
+  padding-inline: 20px;
+}
+
 p {
   margin-block: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
 }
