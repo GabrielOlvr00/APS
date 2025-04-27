@@ -94,11 +94,8 @@ h2 {
 }
 
 .img-list li {
-  height: 18rem;
-  width: 18rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 20rem;
+  width: 20rem;
   font-size: 1.4rem;
   cursor: pointer;
   position: relative;
@@ -115,8 +112,39 @@ h2 {
 
 .img-list .grey-background {
   border-radius: 25px;
+  transition: 0.8s ease;
+}
+
+.img-list li:hover .grey-background {
+  background: rgba(0, 0, 0, 0.747);
+}
+
+.e-waste-title {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  transition: 0.6s ease;
+  font-size: 1.6rem;
+}
+
+.img-list li:hover .e-waste-title {
+  transform: translate(0%, 0%);
+  top: 1rem;
+  left: 1rem;
 }
 
 .img-list p {
-  z-index: 10;
+  position: absolute;
+  padding-inline: 1rem;
+  top: 3rem;
+  opacity: 0;
+  transition: 0.8s ease;
+  font-size: 1.2rem;
+}
+
+.img-list li:hover p {
+  opacity: 1;
 }
